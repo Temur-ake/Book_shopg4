@@ -6,8 +6,8 @@ from starlette.middleware import Middleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette_admin.contrib.sqla import Admin, ModelView
 
+from db import engine
 from models import User, Product, Category, Basket, Order
-from db.database import engine
 from login import UsernameAndPasswordProvider
 
 app = Starlette()

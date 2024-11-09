@@ -3,7 +3,7 @@ import enum
 from sqlalchemy import Integer, String, Float, JSON, DateTime, ForeignKey, Enum, BigInteger
 from sqlalchemy.orm import relationship, Mapped, mapped_column, DeclarativeBase
 
-from db import database
+from db import engine
 
 
 class Base(DeclarativeBase):
@@ -99,4 +99,4 @@ class Basket(Base):
                 f"product_id={self.product_id}, quantity={self.quantity})>")
 
 
-Base.metadata.create_all(database.engine)
+Base.metadata.create_all(engine)
