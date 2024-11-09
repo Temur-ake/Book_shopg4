@@ -18,4 +18,5 @@ jobs:
           script: |
             cd /var/www/temur_bot
             git pull 
-            systemctl restart temur_bot.service
+            systemctl restart temur_bot.service
+            systemctl restart temur_bot_a.service

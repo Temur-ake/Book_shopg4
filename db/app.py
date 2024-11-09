@@ -25,4 +25,4 @@ admin.add_view(ModelView(Basket, icon='fas fa-products'))
 
 admin.mount_to(app)
 if __name__ == '__main__':
-    uvicorn.run(app, host="localhost", port=8005)
+    uvicorn.run(app, host="k.temur.life", port=8005)
