@@ -1,0 +1,280 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-11-08 18:14+0500\n"
+"PO-Revision-Date: 2024-11-08 18:08+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: basket.py:23 keyboard.py:23
+msgid "Foydalanuvchi topilmadi."
+msgstr "Пользователь не найден."
+
+#: basket.py:33
+msgid "Savat bo'sh."
+msgstr "Корзина пуста."
+
+#: basket.py:35
+msgid ""
+"🛒 Savat \n"
+"\n"
+msgstr ""
+"🛒 Корзина \n"
+"\n"
+
+#: basket.py:48 basket.py:81
+msgid "Xato yuz berdi. Iltimos, qayta urinib ko'ring."
+msgstr "Произошла ошибка. Пожалуйста, попробуйте снова."
+
+#: basket.py:54 handlers.py:98 handlers.py:104
+msgid "Kategoriyalardan birini tanlang"
+msgstr "Пожалуйста, выберите категорию."
+
+#: basket.py:68 order.py:147
+msgid "Foydalanuvchi topilmadi!"
+msgstr "Пользователь не найден!"
+
+#: basket.py:77
+msgid "Savat tozalandi!"
+msgstr "Корзина очищена!"
+
+#: basket.py:102
+msgid "Ushbu mahsulot topilmadi. Iltimos qayta urinib ko'ring."
+msgstr "Этот товар не найден. Пожалуйста, попробуйте снова."
+
+#: basket.py:124
+msgid "Mahsulot savatga qo'shildi ✅"
+msgstr "Товар добавлен в корзину ✅"
+
+#: basket.py:141
+msgid "❌ Savatni tozalash"
+msgstr "❌ Очистить корзину"
+
+#: basket.py:142
+msgid "✅ Buyurtmani tasdiqlash"
+msgstr "✅ Подтвердить заказ"
+
+#: basket.py:143 handlers.py:201
+msgid "◀️ orqaga"
+msgstr "◀️ Назад"
+
+#: handlers.py:27 handlers.py:81
+msgid "Assalomu alaykum! Tanlang."
+msgstr "Здравствуйте! Пожалуйста, выберите."
+
+#: handlers.py:34
+msgid ""
+"Assalomu alaykum! \n"
+"Xush kelibsiz!"
+msgstr ""
+"Здравствуйте! \n"
+"Добро пожаловать!"
+
+#: handlers.py:54
+msgid ""
+"Buyruqlar:\n"
+"/start - Botni ishga tushirish\n"
+"/help - Yordam"
+msgstr ""
+"Команды:\n"
+"/start - Запустить бота\n"
+"/help - Помощь"
+
+#: handlers.py:66
+msgid "Tilni tanlang: "
+msgstr "Выберите язык:"
+
+#: handlers.py:74
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#: handlers.py:75
+msgid "Ingiliz"
+msgstr "Английский"
+
+#: handlers.py:76
+msgid "Rus"
+msgstr "Русский"
+
+#: handlers.py:78
+msgid "{lang} tili tanlandi"
+msgstr "Выбран язык {lang}"
+
+#: handlers.py:91
+msgid "Biz ijtimoiy tarmoqlarda"
+msgstr "Мы в социальных сетях"
+
+#: handlers.py:115
+#, fuzzy
+msgid ""
+"\n"
+"\n"
+"\n"
+"\n"
+"Telegram: @C_W24\n"
+"\n"
+"📞  +{number}\n"
+"\n"
+"🤖 Bot Kozimov Temur (@C_W24) tomonidan tayorlandi.\n"
+msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"Telegram: @C_W24\n"
+"\n"
+"📞  +{number}\n"
+"\n"
+"🤖 Бот от Козимова Темура (@C_W24)."
+
+#: handlers.py:134 handlers.py:169
+msgid "◀️Orqaga"
+msgstr "◀️ Назад"
+
+#: handlers.py:135 handlers.py:170
+msgid "🛒 Savatga qo'shish"
+msgstr "🛒 Добавить в корзину"
+
+#: handlers.py:146
+msgid "Mahsulot topilmadi."
+msgstr "Товар не найден."
+
+#: keyboard.py:18
+msgid "🔍 Qidirish"
+msgstr "🔍 Поиск"
+
+#: keyboard.py:43
+msgid "🛒 Mahsulotlar"
+msgstr "🛒 Товары"
+
+#: keyboard.py:44
+msgid "📃 Mening buyurtmalarim"
+msgstr "📃 Мои заказы"
+
+#: keyboard.py:47
+msgid "🔵 Biz ijtimoyi tarmoqlarda"
+msgstr "🔵 Мы в социальных сетях"
+
+#: keyboard.py:48
+msgid "📞 Biz bilan bog'lanish"
+msgstr "📞 Связаться с нами"
+
+#: keyboard.py:50
+msgid "🌐 Tilni almashtirish"
+msgstr "🌐 Сменить язык"
+
+#: keyboard.py:51
+msgid "🔉 Sayt Orqali Buyurtma"
+msgstr ""
+
+#: order.py:35
+msgid "Foydalanuvchi topilmadi ."
+msgstr "Пользователь не найден."
+
+#: order.py:44
+msgid "Buyurtma topilmadi ."
+msgstr "Заказ не найден."
+
+#: order.py:54
+msgid "product_namequantityprice"
+msgstr ""
+"product_namequantityprice\"  # оставлено без изменений, так как это, "
+"вероятно, placeholde"
+
+#: order.py:95
+msgid "📞 Telefon raqam"
+msgstr "📞 Номер телефона"
+
+#: order.py:99
+msgid "Telefon raqamingizni qoldiring (📞 Telefon raqam tugmasini bosing)🔽:"
+msgstr "Оставьте ваш номер телефона (📞 Нажмите кнопку с номером телефона)🔽:"
+
+#: order.py:113
+msgid "Telefon raqamingiz qabul qilindi!"
+msgstr "Ваш номер телефона принят!"
+
+#: order.py:118 order.py:160
+msgid "Savatda hech qanday mahsulot yo'q! Iltimos, mahsulot qo'shing."
+msgstr "В корзине нет товаров! Пожалуйста, добавьте товары."
+
+#: order.py:124 order.py:206
+msgid "❌ Yo'q"
+msgstr "❌ Нет"
+
+#: order.py:125 order.py:208
+msgid "✅ Ha"
+msgstr "✅ Да"
+
+#: order.py:132
+msgid "❌ Buyurtma bekor qilindi"
+msgstr "❌ Заказ отменен"
+
+#: order.py:134
+msgid "Asosiy menyu"
+msgstr "Главное меню"
+
+#: order.py:185
+msgid "Savatda hech qanday to'g'ri mahsulot yo'q!"
+msgstr "В корзине нет действительных товаров!"
+
+#: order.py:223
+msgid ""
+"✅ Hurmatli mijoz! Buyurtmangiz uchun tashakkur.\n"
+"Buyurtma raqami: {orders_num}"
+msgstr ""
+"✅ Уважаемый клиент! Спасибо за ваш заказ.\n"
+"Номер заказа: {orders_num}"
+
+#: order.py:235
+msgid "❌ Invalid data received."
+msgstr "❌ Получены неверные данные."
+
+#: order.py:246
+msgid "❌ Bunday foydalanuvchi topilmadi."
+msgstr "❌ Пользователь не найден."
+
+#: order.py:254
+msgid "❌ Bunday buyurtma topilmadi."
+msgstr "❌ Заказ не найден."
+
+#: order.py:263
+msgid "<i>🎉 Sizning {order_num} raqamli buyurtmangizni admin qabul qildi.</i>"
+msgstr "<i>🎉 Ваш заказ с номером {order_num} принят администратором.</i>"
+
+#: order.py:277
+msgid ""
+"<i>❌ Sizning {order_num} raqamli buyurtmangiz admin tomonidan bekor "
+"qilindi.</i>"
+msgstr "<i>❌ Ваш заказ с номером {order_num} был отменен администратором.</i>"
+
+#: order.py:292
+msgid "❌ Foydalanuvchi topilmadi!"
+msgstr "❌ Пользователь не найден!"
+
+#: order.py:301
+msgid "🤷‍♂️ Sizda hali buyurtmalar mavjud emas. Yoki bekor qilingan"
+msgstr "🤷‍♂️ У вас еще нет заказов. Или они были отменены."
+
+#: order.py:305
+msgid "❌ bekor qilish"
+msgstr "❌ Отменить"
+
+#~ msgid "Botni boshlash"
+#~ msgstr "Запустить бота"
+
+#~ msgid "Yordam"
+#~ msgstr "Помощь"
+
