@@ -14,7 +14,7 @@ import aiogram.exceptions
 manager_panel_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="Buyurtma Admin Bo'limi", web_app=WebAppInfo(url='https://k.temur.life/admin')),
-         KeyboardButton(text="Mahsulot Admin Bo'limi ", web_app=WebAppInfo(url='https://k.temur.life/8005'))],
+         KeyboardButton(text="Mahsulot Admin Bo'limi ")],
         [KeyboardButton(text='Reklama')],
     ],
     resize_keyboard=True
@@ -30,6 +30,12 @@ admin_router.message.filter(ChatTypeFilter([ChatType.PRIVATE]), IsAdmin())
 @admin_router.message(CommandStart(), IsAdmin())
 async def start_for_admin(message: Message):
     await message.answer('Tanlang', reply_markup=manager_panel_keyboard)
+
+
+@admin_router.message(F.text == "Mahsulot Admin Bo'lim", IsAdmin())
+async def admin(message: Message):
+    link = 'http://k.temur.life:8005'
+    await message.answer(text=f"Admin Bo'limi ga o'tish {link}")
 
 
 @admin_router.message(F.text == "Reklama", IsAdmin())
