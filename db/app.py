@@ -6,7 +6,8 @@ from starlette.middleware import Middleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette_admin.contrib.sqla import Admin, ModelView
 
-from models import User, Product, Category, Basket, Order, engine
+from models import User, Product, Category, Basket, Order
+from db.database import engine
 from login import UsernameAndPasswordProvider
 
 app = Starlette()
@@ -25,4 +26,4 @@ admin.add_view(ModelView(Basket, icon='fas fa-products'))
 
 admin.mount_to(app)
 if __name__ == '__main__':
-    uvicorn.run(app, host="k.temur.life", port=8005)
+    uvicorn.run(app, host="localhost", port=8005)
