@@ -9,8 +9,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.utils.i18n import gettext as _, lazy_gettext as __
 from sqlalchemy.future import select
 
-from db.database import session
-from db.models import Product, Category, User, Basket
+from _db.database import session
+from _db.models import Product, Category, User, Basket
 from keyboard import show_categories, main_keyboard_btn
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder

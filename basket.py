@@ -6,8 +6,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 
-from db.database import session
-from db.models import Product, Basket, User
+from _db.database import session
+from _db.models import Product, Basket, User
 from keyboard import show_categories
 
 logging.basicConfig(level=logging.INFO)

@@ -4,8 +4,8 @@ from aiogram.enums import ChatType
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
-from db.database import session
-from db.models import User
+from _db.database import session
+from _db.models import User
 from filter import IsAdmin, ChatTypeFilter
 from state import AdminState
 import aiogram.exceptions

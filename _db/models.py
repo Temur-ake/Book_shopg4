@@ -3,7 +3,7 @@ import enum
 from sqlalchemy import Integer, String, Float, JSON, DateTime, ForeignKey, Enum, BigInteger
 from sqlalchemy.orm import relationship, Mapped, mapped_column, DeclarativeBase
 
-from db import engine
+from _db import engine
 
 
 class Base(DeclarativeBase):
