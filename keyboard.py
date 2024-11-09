@@ -3,8 +3,8 @@ from aiogram.utils.i18n import gettext as _
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 from sqlalchemy.future import select
 
-from _db.database import session
-from _db.models import Category, Basket, User
+from database import session
+from models import Category, Basket, User
 
 
 def show_categories(user_id):

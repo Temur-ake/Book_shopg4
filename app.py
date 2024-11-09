@@ -1,12 +1,10 @@
-from base64 import encode
-
 import uvicorn
 from starlette.applications import Starlette
 from starlette.middleware import Middleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette_admin.contrib.sqla import Admin, ModelView
 
-from _db import engine
+from database import engine
 from models import User, Product, Category, Basket, Order
 from login import UsernameAndPasswordProvider
 
@@ -26,4 +24,4 @@ admin.add_view(ModelView(Basket, icon='fas fa-products'))
 
 admin.mount_to(app)
 if __name__ == '__main__':
-    uvicorn.run(app, host="localhost", port=8005)
+    uvicorn.run(app, host="k.temur.life", port=8005)

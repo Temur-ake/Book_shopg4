@@ -3,11 +3,10 @@ from aiogram import F, Router
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InputMediaPhoto
 from aiogram.utils.i18n import gettext as _
 from aiogram.utils.keyboard import InlineKeyboardBuilder
-from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 
-from _db.database import session
-from _db.models import Product, Basket, User
+from database import session
+from models import Product, Basket, User
 from keyboard import show_categories
 
 logging.basicConfig(level=logging.INFO)

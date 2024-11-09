@@ -11,8 +11,8 @@ from sqlalchemy import select
 from admin import admin_router
 from basket import basket_router
 from cons import TOKEN
-from _db.database import session
-from _db.models import Category, Product
+from database import session
+from models import Category, Product
 from handlers import main_router
 from inline_mode import inline_router
 from keyboard import c_lis

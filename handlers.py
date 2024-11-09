@@ -1,5 +1,3 @@
-import logging
-
 from aiogram import F
 from aiogram import Router
 from aiogram.enums import ParseMode
@@ -9,8 +7,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.utils.i18n import gettext as _, lazy_gettext as __
 from sqlalchemy.future import select
 
-from _db.database import session
-from _db.models import Product, Category, User, Basket
+from database import session
+from models import Product, Category, User, Basket
 from keyboard import show_categories, main_keyboard_btn
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder

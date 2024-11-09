@@ -14,8 +14,8 @@ from sqlalchemy.orm import joinedload
 
 from basket import to_category, basket_msg
 from cons import ADMIN_LIST
-from _db.database import session
-from _db.models import Order, Basket, User
+from database import session
+from models import Order, Basket, User
 from keyboard import main_keyboard_btn
 
 order_router = Router()

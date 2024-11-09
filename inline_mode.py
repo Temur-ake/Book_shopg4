@@ -2,8 +2,8 @@ from aiogram import Router
 from aiogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
 import logging
 from sqlalchemy.future import select
-from _db.database import session
-from _db.models import Product
+from database import session
+from models import Product
 
 inline_router = Router()
 
