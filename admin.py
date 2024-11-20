@@ -13,7 +13,7 @@ import aiogram.exceptions
 # Define the keyboard
 manager_panel_keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [KeyboardButton(text="Buyurtma Admin Bo'limi", web_app=WebAppInfo(url='https://k.temur.life/admin')),
+        [KeyboardButton(text="Buyurtma Admin Bo'limi"),
          KeyboardButton(text="Mahsulot Admin Bo'limi")],
         [KeyboardButton(text='Reklama')],
     ],
@@ -34,8 +34,14 @@ async def start_for_admin(message: Message):
 
 @admin_router.message(F.text == "Mahsulot Admin Bo'limi", IsAdmin())
 async def admin(message: Message):
-    link = 'http://k.temur.life:8005'
-    await message.answer(text=f"Admin Bo'limi ga o'tish {link}")
+    link = 'http://k.temur.life:8016'
+    await message.answer(text=f" Mahsulot Admin Bo'limi ga o'tish {link}")
+
+
+@admin_router.message(F.text == "Buyurtma Admin Bo'limi", IsAdmin())
+async def admin(message: Message):
+    link1 = 'https://k.temur.life/admin'
+    await message.answer(text=f"Buyurtma Admin Bo'limi ga o'tish {link1}")
 
 
 @admin_router.message(F.text == "Reklama", IsAdmin())
