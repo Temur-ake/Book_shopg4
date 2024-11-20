@@ -6,7 +6,7 @@ from cons import ADMIN_LIST
 
 
 class ChatTypeFilter(Filter):
-    def __init__(self, chat_types: list[str]) -> None:
+    def __init__(self, chat_types) -> None:
         self.chat_types = chat_types
 
     async def __call__(self, message: Message) -> bool:
